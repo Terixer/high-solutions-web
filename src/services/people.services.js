@@ -15,7 +15,7 @@ function getPeople() {
 
     }
 
-    return fetch('/people', requestOptions)
+    return fetch('/api/people', requestOptions)
         .then(handleResponse)
         .then(data => data);
 }

@@ -13,7 +13,7 @@ function login(email, password) {
         body: JSON.stringify({ email, password })
     }
 
-    return fetch('/login', requestOptions)
+    return fetch('/api/login', requestOptions)
         .then(handleResponse)
         .then(data => {
 
