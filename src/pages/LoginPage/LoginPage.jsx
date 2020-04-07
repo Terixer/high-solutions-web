@@ -4,6 +4,7 @@ import { userActions } from '../../actions';
 import { Button, Form, Grid, Header, Image, Message, Segment, Dimmer, Loader } from 'semantic-ui-react'
 import { history } from '../../helpers';
 import { alertActions } from '../../actions';
+import { AppLoader } from '../../components';
 
 
 
@@ -53,16 +54,13 @@ class LoginPage extends React.Component {
         return (
             <>
                 {loggingIn &&
-                    <Dimmer active>
-                        <Loader />
-                    </Dimmer>
+                    <AppLoader />
                 }
                 <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
-
                     <Grid.Column style={{ maxWidth: 450 }}>
                         <Header as='h2' color='teal' textAlign='center'>
                             Log-in to your account
-                    </Header>
+                        </Header>
                         {alert.message &&
                             <Message negative>
                                 <Message.Header>{alert.message} </Message.Header>

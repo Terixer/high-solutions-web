@@ -1,2 +1,7 @@
 export * from './PrivateRoute'
-export * from './SinglePerson'
+export * from './SingleCellTable'
+export * from './NavigationMenu'
+export * from './AppLoader'
+export * from './PeopleTable'
+export * from './SingleCellTable'
+
