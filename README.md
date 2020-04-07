@@ -57,7 +57,7 @@ Podział na odpowiednie foldery:
 * actions - Redux'owe akcje
 * components - Komponenty
 * constants - Stałe
-* helpers - Helpery (przy większej ilości czasu przerobiłbym je na serwisy)
+* helpers - Helpery
 * pages - Strony
 * reducers - Reducery do Redux'a
 * services - Serwisy
@@ -68,7 +68,7 @@ master -> develop -> developerName/featureName
 ```
 ## Inne kwestie
 ### Czas pracy
-- 4h - tyle pracy zajeło mi zrobienie aplikacji (jak zwykle heroku zajął mi sporo czasu :-( )
+- 4h - tyle pracy zajęło mi zrobienie aplikacji (jak zwykle heroku zajął mi sporo czasu)
 ### Produkcja
 Aplikacja działa na Heroku http://high-solutions-web.herokuapp.com/
 ### ToDo

@@ -28,7 +28,7 @@ export const Footer = () => (
             </List>
             <Divider />
             <Container textAlign='center'>
-                Make with <Image src='https://www.montessoriandmore.ca/wp-content/uploads/2016/03/favourite-heart-icon.png' avatar size='mini' style={{ paddingBottom: '8px', marginLeft: '8px' }} /> for <Image src='https://static.highsolutions.pl/images/logo.png' inline size='tiny' />
+                Made with <Image src='https://www.montessoriandmore.ca/wp-content/uploads/2016/03/favourite-heart-icon.png' avatar size='mini' style={{ paddingBottom: '8px', marginLeft: '8px' }} /> for <Image src='https://static.highsolutions.pl/images/logo.png' inline size='tiny' />
             </Container>
         </Container>
     </Segment>
