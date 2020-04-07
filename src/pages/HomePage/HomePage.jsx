@@ -3,6 +3,19 @@ import { connect } from 'react-redux';
 import { peopleActions } from '../../actions';
 import { Link } from 'react-router-dom';
 import { SinglePerson } from '../../components';
+import {
+    Container,
+    Divider,
+    Dropdown,
+    Grid,
+    Header,
+    Icon,
+    Image,
+    List,
+    Menu,
+    Segment,
+    Visibility,
+} from 'semantic-ui-react'
 
 
 class HomePage extends React.Component {
@@ -16,7 +29,14 @@ class HomePage extends React.Component {
     render() {
         const { user, people } = this.props;
         return (
-            <div className="col-md-6 col-md-offset-3">
+            <div>
+                <Container text style={{ marginTop: '2em' }}>
+                    <Header as='h1'>Sticky Example</Header>
+                    <p>
+                        This example shows how to use lazy loaded images, a sticky menu, and a simple text
+                        container
+                    </p>
+                </Container>
                 <h1>Hi {user.email}!</h1>
                 People from SWAPI
                 {!people.length &&
