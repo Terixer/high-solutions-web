@@ -7,7 +7,7 @@ export class SingleCellTable extends Component {
             <Table.Row>
                 <Table.Cell>
                     <Header as='h4' image>
-                        {!this.props.item.gender && <Image src='https://webmention.io/avatar/pbs.twimg.com/b75b4eece8176bedf22d10c8a8419659b36e66f55fc231c4ad3a72b310ca2168.jpg' rounded size='mini' />}
+                        {this.props.item.gender !== 'female' && this.props.item.gender !== 'male' && <Image src='https://webmention.io/avatar/pbs.twimg.com/b75b4eece8176bedf22d10c8a8419659b36e66f55fc231c4ad3a72b310ca2168.jpg' rounded size='mini' />}
                         {this.props.item.gender === 'female' && <Image src='https://react.semantic-ui.com/images/avatar/small/lindsay.png' rounded size='mini' />}
                         {this.props.item.gender === 'male' && <Image src='https://react.semantic-ui.com/images/avatar/small/matthew.png' rounded size='mini' />}
                         <Header.Content>

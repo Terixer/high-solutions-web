@@ -58,6 +58,16 @@ class LoginPage extends React.Component {
                 }
                 <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
                     <Grid.Column style={{ maxWidth: 450 }}>
+                        <Message info>
+                            <Message.Header>Demo user </Message.Header>
+                            <Message.Content>
+                                <p style={{ paddingTop: '10px' }}>
+                                    <b>Email</b>: user@user.com <br />
+                                    <b>Password</b>: password123
+                                </p>
+                            </Message.Content>
+
+                        </Message>
                         <Header as='h2' color='teal' textAlign='center'>
                             Log-in to your account
                         </Header>

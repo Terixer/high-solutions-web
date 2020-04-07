@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { peopleActions } from '../../actions';
-import { NavigationMenu, AppLoader, PeopleTable } from '../../components';
+import { NavigationMenu, AppLoader, PeopleTable, Footer } from '../../components';
 import {
     Container,
     Header
@@ -30,7 +30,7 @@ class HomePage extends React.Component {
                 }
                 <NavigationMenu />
 
-                <Container text style={{ paddingTop: '5em' }}>
+                <Container style={{ paddingTop: '6em' }}>
                     <Header as='h1'>People from SWAPI</Header>
                     <p>
                         You are logged as: {user.email}
@@ -40,6 +40,8 @@ class HomePage extends React.Component {
                 <Container style={{ marginTop: '5em' }}>
                     <PeopleTable people={people} />
                 </Container>
+
+                <Footer />
             </>
 
         );

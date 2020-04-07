@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Table } from 'semantic-ui-react'
 import { SingleCellTable } from './index'
 
+
 export class PeopleTable extends Component {
     render() {
         return (
