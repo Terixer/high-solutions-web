@@ -17,6 +17,8 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props);
 
+        document.title = "High Solutions Web";
+
         const { dispatch } = this.props;
         dispatch(peopleActions.getPeople());
     }
