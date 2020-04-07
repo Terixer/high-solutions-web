@@ -1,0 +1,4 @@
+export const peopleConstants = {
+    GET_ALL_PEOPLE_SUCCESS: 'GET_ALL_PEOPLE_SUCCESS',
+    GET_ALL_PEOPLE_ERROR: 'GET_ALL_PEOPLE_ERROR',
+};

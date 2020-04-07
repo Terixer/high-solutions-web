@@ -1,24 +1,24 @@
-import { appConstants } from '../constants/app.constants';
-
 export const userService = {
-    login
+    login,
+    logout
 };
 
-function login(username, password) {
+function login(email, password) {
     const requestOptions = {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
-        body: JSON.stringify({ username, password })
-    };
+        body: JSON.stringify({ email, password })
+    }
 
-    return fetch(`${appConstants.API_URL}/login`, requestOptions)
+    return fetch('/login', requestOptions)
         .then(handleResponse)
         .then(data => {
 
             const user = {
-                username: username,
+                email: email,
                 token: data.access_token
             }
             localStorage.setItem('user', JSON.stringify(user));
@@ -27,11 +27,18 @@ function login(username, password) {
         });
 }
 
+function logout() {
+    localStorage.removeItem('user');
+}
 
 function handleResponse(response) {
-    return response.text().then(text => {
-        const data = text && JSON.parse(text);
-        if (response.error) {
+    return response.json().then(data => {
+        console.log(data);
+        if (!response.ok) {
+            if (response.status === 401) {
+                logout();
+                window.location.reload(true);
+            }
             const error = (data && data.message) || response.statusText;
             return Promise.reject(error);
         }

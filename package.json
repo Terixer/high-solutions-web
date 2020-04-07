@@ -25,6 +25,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://high-solutions-task.herokuapp.com//api",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -9,14 +9,14 @@ export const alertActions = {
 function success(message) {
     return {
         type: alertConstants.SUCCESS,
-        message
+        message: message
     };
 }
 
 function error(message) {
     return {
         type: alertConstants.ERROR,
-        message
+        message: message
     };
 }
 
