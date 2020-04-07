@@ -5,7 +5,7 @@
     },
     "proxies": {
         "/api/": {
-            "origin": "http://high-solutions-task.herokuapp.com"
+            "origin": "http://high-solutions-task.herokuapp.com/api/"
         }
     }
 }
